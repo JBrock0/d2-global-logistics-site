@@ -313,6 +313,22 @@ section { padding-block: 76px; }
   align-items: flex-start;
 }
 .credential-list svg { flex-shrink: 0; margin-top: 2px; color: var(--blue-deep); }
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--blue-deep);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--blue-deep) 35%, transparent);
+  padding-bottom: 1px;
+}
+.learn-more:hover { color: var(--blue); border-color: var(--blue); }
+@media (prefers-color-scheme: dark) {
+  .learn-more { color: var(--blue); }
+}
 
 /* ---- contact ---- */
 .contact {
